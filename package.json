@@ -1,11 +1,29 @@
 {
 	"name": "git-branch-files",
-	"displayName": "git-branch-files",
+	"displayName": "Git Branch Files",
 	"description": "The extension will open the files for the current branch",
 	"version": "0.0.1",
 	"publisher": "AlwarG",
 	"license": "MIT",
+	"homepage": "https://github.com/AlwarG/git-branch-files",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AlwarG/git-branch-files"
+	},
+	"bugs": {
+		"url": "https://github.com/AlwarG/git-branch-files/issues"
+	},
 	"icon": "images/git-logo.png",
+	"keywords": [
+		"git",
+		"git branch",
+		"git branch files",
+		"git branch files open",
+		"branch files",
+		"branch files open",
+		"git files",
+		"git files open"
+	],
 	"engines": {
 		"vscode": "^1.57.0"
 	},
