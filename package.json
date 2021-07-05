@@ -1,0 +1,45 @@
+{
+	"name": "git-branch-files",
+	"displayName": "git-branch-files",
+	"description": "The extension will open the files for the current branch",
+	"version": "0.0.1",
+	"publisher": "AlwarG",
+	"license": "MIT",
+	"icon": "images/git-logo.png",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:git-branch-files.openFiles",
+		"onCommand:git-branch-files.openCloseFiles"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [{
+			"command": "git-branch-files.openFiles",
+			"title": "GitBranchFiles: Open Changed Files"
+		},{
+			"command": "git-branch-files.openCloseFiles",
+			"title": "GitBranchFiles: Close Current and Open Changed Files"
+		}]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "yarn run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.57.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	}
+}
